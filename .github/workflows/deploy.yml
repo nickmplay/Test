@@ -28,6 +28,16 @@ jobs:
           R -e 'install.packages("dplyr")'
           R -e 'install.packages("caret")'
           R -e 'install.packages("fastDummies")'
+          R -e 'install.packages("base64enc")'
+          R -e 'install.packages("bslib")'
+          R -e 'install.packages("cachem")'
+          R -e 'install.packages("commonmark")'
+          R -e 'install.packages("crayon")'
+          R -e 'install.packages("fastmap")'
+          R -e 'install.packages("fontawesome")'
+          R -e 'install.packages("fs")'
+          R -e 'install.packages("htmltools")'
+          R -e 'install.packages("httpuv")'
 
       - name: Deploy to shinyapps.io
         env:
