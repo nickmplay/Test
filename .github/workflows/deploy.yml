@@ -23,10 +23,11 @@ jobs:
       - uses: r-lib/actions/setup-renv@v2
 
       - name: Install packages
-        run: R -e 'install.packages("rsconnect")'
-        run: R -e 'install.packages("dplyr")'
-        run: R -e 'install.packages("caret")'
-        run: R -e 'install.packages("fastDummies")'
+        run: |
+          R -e 'install.packages("rsconnect")'
+          R -e 'install.packages("dplyr")'
+          R -e 'install.packages("caret")'
+          R -e 'install.packages("fastDummies")'
 
       - name: Deploy to shinyapps.io
         env:
